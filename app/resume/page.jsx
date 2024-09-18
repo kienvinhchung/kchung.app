@@ -350,7 +350,7 @@ const Resume = () => {
                                         {about.title}
                                     </h3>
                                     <Link
-                                    href="https://1drv.ms/w/c/9747102949ee8fa5/EWhOfB95JUNIjApWlm_dHXoBGapOOTvtn9D_Hw0SHyclGQ?e=3tbABe" 
+                                    href="https://1drv.ms/w/c/9747102949ee8fa5/EWhOfB95JUNIjApWlm_dHXoBGapOOTvtn9D_Hw0SHyclGQ?e=LtLzFs" 
                                     target="_blank"
                                     >
                                         <Button 
