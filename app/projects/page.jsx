@@ -200,8 +200,13 @@ const projects = [
         stack: [{name: "Tableau"}, {name: "Excel"}, {name: "Logistics"}],
         report1: 'https://public.tableau.com/views/LogisticsDemand/DemandDataDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link',
         report2: 'https://public.tableau.com/views/LogisticsContainerShippingRatefromStatetoRate/RateDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link',
-        image: '/assets/work/project_logistics/',
-        blank1: '/assets/work/project_logistics/',
+        image: '/assets/work/project_logistics/project-wallpaper-logistics.jpg',
+        graphs: [
+            { src: '/assets/work/project_logistics/demand_dashboard.png', caption: "Logistics Demand Dashboard (1/2)" },
+            { src: '/assets/work/project_logistics/rate_dashboard.png', caption: "Container Shipping Rate Dashboard (2/2)" },
+        ],
+        rate_map: '/assets/work/project_logistics/rate_map.png',
+        rate_state: '/assets/work/project_logistics/rate_state.png',
     },
 
     /* ibm */
@@ -526,7 +531,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(graph.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -561,7 +566,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(graph.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -596,7 +601,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(graph.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -631,7 +636,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(graph.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -728,7 +733,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(column.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -762,7 +767,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(insight.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -796,7 +801,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(relationship.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -854,7 +859,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[1260px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(demo.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -940,7 +945,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(takeaway.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -1181,7 +1186,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(histogram.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -1318,7 +1323,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(graph.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -1413,6 +1418,56 @@ const Projects = () => {
 
                                         {/* summary */}
                                         <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
+
+                                        {/* graphs */}
+                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Snapshots of dashboard</p>
+                                        <div className="w-full sm:w-full md:w-full lg:w-[86%] xl:w-[70%] mx-auto">
+                                            <Swiper
+                                                spaceBetween={30}
+                                                slidesPerView={1}
+                                                className="h-[520px] mb-12"
+                                            >
+                                                {project.graphs.map((graph, index) => {
+                                                    return (
+                                                        <SwiperSlide key={index} className="w-full">
+                                                            <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(graph.src)} style={{ cursor: 'pointer' }}>
+                                                                {/* overlay */}
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
+                                                                
+                                                                {/* image */}
+                                                                <div className="relative w-full h-full">
+                                                                    <Image src={graph.src} fill quality={100} alt={`Histogram ${index + 1}`} />
+                                                                </div>
+                                                            </div>
+                                                            {/* caption */}
+                                                            <p className="absolute bottom-2 text-primarytext text-xs md:text-lg z-20">{graph.caption}</p> 
+                                                        </SwiperSlide>
+                                                    );
+                                                })}
+
+                                                {/* slider buttons */}
+                                                <ProjectSliderBtns 
+                                                    containerStyles="flex gap-2 absolute right-0 bottom-0 z-20 w-full w-max justify-none xl:bottom-0 xl:w-max xl:justify-none" 
+                                                    btnStyles="bg-primary hover:bg-accent text-accent hover:text-primary text-[28px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                                                />
+                                            </Swiper>
+                                        </div>
+
+                                        {/* rate map */}
+                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">AVG Rate from California to other States</p>
+                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
+                                            <div onClick={() => handleZoomClick(project.rate_map)} style={{ cursor: 'pointer' }}>
+                                                <Image src={project.rate_map} quality={100} width="800" height="400" />
+                                            </div>
+                                        </span>
+
+                                        {/* rate state */}
+                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">AVG Rate from State to State Heatmap</p>
+                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
+                                            <div onClick={() => handleZoomClick(project.rate_state)} style={{ cursor: 'pointer' }}>
+                                                <Image src={project.rate_state} quality={100} width="800" height="400" />
+                                            </div>
+                                        </span>
 
                                     </>
                                 )}
@@ -1511,7 +1566,7 @@ const Projects = () => {
                                                         <SwiperSlide key={index} className="w-full">
                                                             <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(histogram.src)} style={{ cursor: 'pointer' }}>
                                                                 {/* overlay */}
-                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                                                 
                                                                 {/* image */}
                                                                 <div className="relative w-full h-full">
@@ -1611,7 +1666,7 @@ const Projects = () => {
                                         <div className="h-[220px] md:h-[300px] lg:h-[380px] xl:h-[460px] relative group flex justify-center items-center bg-accent/20">
                                             
                                             {/* overlay */}
-                                            <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                            <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                                             
                                             {/* image */}
                                             <div className="relative w-full h-full">
