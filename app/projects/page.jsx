@@ -168,12 +168,12 @@ const projects = [
 
     /* yelp sql */
     {   num: "07",
-        title: "",
-        description: "(coming soon, wrapping it up)", 
-        stack: [{name: ""}, {name: ""}, {name: ""}],
-        image: '/assets/work/project_/',
-        blank1: '/assets/work/project_/',
-        kaggle: '',
+        title: "Yelp Business & User Analysis",
+        description: "This project consists of a two-part assignment focused on data profiling, analysis, and research. The first part involves answering a series of questions designed to help profile and understand the dataset. The evaluation will consider both the accuracy of findings and the readability of the code used. Proper formatting and comments are expected to make the code easy to follow. The second part requires formulating and answering a research question based on the dataset. The dataset must be prepared for analysis, and the code will again be assessed on clarity and readability. The final deliverable for both parts will be a worksheet containing the answers and SQL code, formatted in a manner that ensures it is clear for peer review.", 
+        stack: [{name: "SQLite"}, {name: "RDBMS"}, {name: "Data Modeling"}],
+        image: '/assets/work/project_yelp/project-wallpaper-yelp.jpg',
+        diagram: '/assets/work/project_yelp/YelpERDiagram.png',
+        deliverable: '/assets/work/project_yelp/yelp_sql.txt',
     },
 
     /* credit card */
@@ -1209,7 +1209,7 @@ const Projects = () => {
                                     </>
                                 )}
 
-                                {/* project (07) content */}
+                                {/* project 07 yelp sql content */}
                                 {(project.num === "07") && (
                                     <>
                                         {/* project description */}
@@ -1218,16 +1218,38 @@ const Projects = () => {
                                         {/* border */}
                                         <div className="border border-primarytext/50 my-6"></div>
 
+                                        {/* Deliverable link button */}
+                                        <span className="flex items-center justify-start gap-6">
+                                            <span className="text-base lg:text-xl xl:text-xl">Deliverable Text File</span>
+                                            <Link href={project.deliverable} target="_blank" className="flex items-center group transition-all">
+                                                <TooltipProvider delayDuration={100}>
+                                                    <Tooltip>
+                                                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-primarytext/10 flex justify-center items-center group duration-500 hover:rotate-45">
+                                                            <BsArrowUpRight className="text-primarytext text-xl group-hover:text-accent transition-all" />
+                                                        </TooltipTrigger>
+                                                        <TooltipContent>
+                                                            <p>Deliverable Text File</p>
+                                                        </TooltipContent>
+                                                    </Tooltip>
+                                                </TooltipProvider>
+                                            </Link>
+                                        </span>
+
                                         {/* border */}
                                         <div className="border border-primarytext/50 my-6"></div>
 
-                                        {/* summary */}
-                                        <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
+                                        {/* diagram */}
+                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Entity-Relationship (ER) Diagram</p>
+                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
+                                            <div onClick={() => handleZoomClick(project.diagram)} style={{ cursor: 'pointer' }}>
+                                                <Image src={project.diagram} quality={100} width="800" height="400" />
+                                            </div>
+                                        </span>
 
                                     </>
                                 )}
 
-                                {/* project (08) content */}
+                                {/* project 08 credit card content */}
                                 {(project.num === "08") && (
                                     <>
                                         {/* project description */}
