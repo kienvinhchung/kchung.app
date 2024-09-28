@@ -15,7 +15,7 @@ const stats = [
         href: "/resume",
     },
     {
-        num: 5,
+        num: 11,
         text: "Completed <br/>Projects",
         href: "/projects",
     },

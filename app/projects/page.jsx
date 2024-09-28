@@ -25,6 +25,7 @@ import ProjectSliderBtns from "@/components/ui/ProjectSliderBtns";
 
 const projects = [
 
+    /* 01 british airways */
     {   num: "01",
         title: "British Airways Data Science Internship",
         description: "This project focuses on leveraging data analytics and predictive modeling to uncover crucial business insights and forecast customer buying behavior for British Airways. The objective is to assist the airline in acquiring customers before they embark on their holidays. By applying advanced analytical techniques, the project delivers actionable recommendations, tools, and models that drive informed business decisions and optimize customer acquisition strategies.", 
@@ -60,6 +61,7 @@ const projects = [
         insights_2: 'https://1drv.ms/p/c/9747102949ee8fa5/EWCjBckZuA9PmZQpGLhbgrQBN6550wceDUJrkdw_JVn-fw?e=mkZsci', 
     },
 
+    /* 02 loanm approval */
     {   num: "02",
         title: "Loan Approval Prediction",
         description: "This project involves developing a machine learning model designed to predict loan approval decisions based on an applicant's financial information. The model is trained on a dataset containing over 4,000 entries using eXtreme Gradient Boosting, ensuring robust and accurate predictions.",
@@ -71,7 +73,6 @@ const projects = [
         correlation: '/assets/work/project_loanprediction/graphs/correlation.png',
         confusion_matrix: '/assets/work/project_loanprediction/graphs/model-confusion-matrix.png',
         scores: '/assets/work/project_loanprediction/graphs/model-scores.png',
-        //blank4: '/assets/work/project_loanprediction/graphs/',
         kaggle: 'https://www.kaggle.com/code/kienvchung/loan-approval-prediction-eda-ml-model-f1-score-99',
         columns: [
             { src: '/assets/work/project_loanprediction/columns/dependents.png', caption: "Number of dependents (1/12)" },
@@ -104,6 +105,7 @@ const projects = [
         ],
     },
 
+    /* 03 business intelligence */
     {   num: "03",
         title: "Business Intelligence",
         stack: [{name: "Power BI"}, {name: "Power Query"}, {name: "DAX"}],
@@ -123,6 +125,7 @@ const projects = [
         ],
     },
 
+    /* fb tiktok sentiment analysis */
     {   num: "04",
         title: "Sentiment & Textual Analysis",
         description: "This project focuses on analyzing public sentiment regarding the TikTok ban as discussed in FOX News's post on Facebook. It involves scraping data from this post and applying natural language processing techniques to gain insights into public opinion on the issue. Additionally, the project will visualize the frequency of key terms using a WordCloud to reveal prominent themes and sentiments.",
@@ -140,7 +143,68 @@ const projects = [
         kaggle: 'https://www.kaggle.com/code/kienvchung/textual-data-analysis-tiktokban/notebook',
     },
 
+    /* tiktok claims */
     {   num: "05",
+        title: "Tiktok Claims Video Classification Predictive Model",
+        description: "(uploading....)", 
+        stack: [{name: "Python"}, {name: "Machine Learning"}, {name: "Classification"}],
+        image: '/assets/work/project_/',
+    },
+
+    /* bikeshare */
+    {   num: "06",
+        title: "Bike-share Marketing Analysis",
+        description: "The marketing analyst team at Cyclistic, a bike-share company in Chicago, aims to convert casual riders into annual members by analyzing how both groups use the service differently. To support this initiative, 12 months of historical trip data will be collected, cleaned, and analyzed. The analysis, visualized using ggplot, will provide insights that inform marketing strategies to maximize annual memberships and drive future growth. These recommendations will be presented to Cyclistic executives for approval.", 
+        stack: [{name: "R Programming"}, {name: "RStudio"}, {name: "R Markdown"}],
+        rstudio: "/assets/work/project_bikeshare/bikeshare-analysis.html",
+        image: '/assets/work/project_bikeshare/project-wallpaper-bikeshare.jpg',
+        histograms: [
+            { src: '/assets/work/project_bikeshare/number_of_rides.png', caption: "Number of rides by day of the week and rider type (1/2)" },
+            { src: '/assets/work/project_bikeshare/average_duration.png', caption: "Average duration by day of the week and rider type (2/2)" },
+        ],
+        bike_type: '/assets/work/project_bikeshare/bike_type.png',
+        trips_by_month: '/assets/work/project_bikeshare/trips_by_month.png',
+    },
+
+    /* yelp sql */
+    {   num: "07",
+        title: "",
+        description: "(coming soon, wrapping it up)", 
+        stack: [{name: ""}, {name: ""}, {name: ""}],
+        image: '/assets/work/project_/',
+        blank1: '/assets/work/project_/',
+        kaggle: '',
+    },
+
+    /* credit card */
+    {   num: "08",
+        title: "",
+        description: "(coming soon)", 
+        stack: [{name: ""}, {name: ""}, {name: ""}],
+        image: '/assets/work/project_/',
+        blank1: '/assets/work/project_/',
+    },
+
+    /* logistic */
+    {   num: "09",
+        title: "",
+        description: "(coming soon)", 
+        stack: [{name: ""}, {name: ""}, {name: ""}],
+        image: '/assets/work/project_/',
+        blank1: '/assets/work/project_/',
+    },
+
+    /* ibm */
+    {   num: "10",
+        title: "",
+        description: "(coming soon)", 
+        stack: [{name: ""}, {name: ""}, {name: ""}],
+        image: '/assets/work/project_/',
+        blank1: '/assets/work/project_/',
+    },
+
+    /* loan outliers */
+    {   num: "11",
         title: "Loan Data Outlier Detection",
         description: "Outlier detection in datasets is most effectively achieved through visualization. A common statistical method for identifying outliers is the 1.5x IQR (Interquartile Range) rule. This project implements a Python function that applies this rule to detect outliers in a dataset. The outliers are then visually highlighted within the dataframe for easy identification and analysis.",
         stack: [{name: "Python"}, {name: "Pandas"}, {name: "Plotly"} , {name: "NumPy"}],
@@ -159,18 +223,6 @@ const projects = [
             { src: '/assets/work/project_loanoutliers/util-hist.png', caption: "Borrower's revolving line utilization rate (8/8)" },
         ],
         kaggle: 'https://www.kaggle.com/code/kienvchung/loan-data-outliers-detection',
-    },
-
-    {   num: "06",
-        title: "Tiktok Claims Video Classification Predictive Model",
-        description: "(coming soon, wrapping it up)", 
-        stack: [{name: "Python"}, {name: "Machine Learning"}, {name: "Classification"}],
-        image: '/assets/work/project_5/',
-        blank1: '/assets/work/project_5/',
-        blank2: '/assets/work/project_5/',
-        blank3: '/assets/work/project_5/',
-        blank4: '/assets/work/project_5/',
-        kaggle: '',
     },
 
 ];
@@ -330,7 +382,7 @@ const Projects = () => {
                                             {/* project source */}
                                             <p className="text-primarytext/60">
                                                 Customer Booking Dataset <br />
-                                                Size: 50,000 entries, 14 features
+                                                Size: 50,000 entries; 14 features
                                             </p>
                                             <br />
                                             {/* power point link button */}
@@ -623,6 +675,12 @@ const Projects = () => {
 
                                         {/* border */}
                                         <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* data info */}
+                                        <p className="text-primarytext/60">
+                                            Loan Approval Dataset <br />
+                                            Size: 4,269 entries; 13 features
+                                        </p>
 
                                         {/* kaggle link button */}
                                         <span className="flex items-center justify-start gap-6">
@@ -940,6 +998,12 @@ const Projects = () => {
                                             Range: 9 days
                                         </p>
 
+                                        {/* data info */}
+                                        <p className="text-primarytext/60">
+                                            Comments Dataset <br />
+                                            Size:  587 entries; 8 features
+                                        </p>
+
                                         {/* border */}
                                         <div className="border border-primarytext/50 my-6"></div>
 
@@ -1000,8 +1064,225 @@ const Projects = () => {
                                     </>
                                 )}
 
-                                {/* project 05 loan outliers content */}
+                                {/* project (05) content */}
                                 {(project.num === "05") && (
+                                    <>
+                                        {/* project description */}
+                                        <p className="text-primarytext/60">{project.description}</p>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* summary */}
+                                        <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
+
+                                    </>
+                                )}
+
+                                {/* project 06 bike-share content */}
+                                {(project.num === "06") && (
+                                    <>
+                                        {/* project description */}
+                                        <p className="text-primarytext/60">{project.description}</p>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* data info */}
+                                        <p className="text-primarytext/60">
+                                            Date: December 2021 to November 2022 <br />
+                                            Range: 12 months
+                                        </p>
+
+                                        <p className="text-primarytext/60">
+                                            Bike Trip Dataset <br />
+                                            Size:  5,733,451 entries; 13 features
+                                        </p>
+
+                                        {/* Rstudio link button */}
+                                        <span className="flex items-center justify-start gap-6">
+                                            <span className="text-base lg:text-xl xl:text-xl">RStudio Notebook</span>
+                                            <Link href={project.rstudio} target="_blank" className="flex items-center group transition-all">
+                                                <TooltipProvider delayDuration={100}>
+                                                    <Tooltip>
+                                                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-primarytext/10 flex justify-center items-center group duration-500 hover:rotate-45">
+                                                            <BsArrowUpRight className="text-primarytext text-xl group-hover:text-accent transition-all" />
+                                                        </TooltipTrigger>
+                                                        <TooltipContent>
+                                                            <p>RStudio Notebook</p>
+                                                        </TooltipContent>
+                                                    </Tooltip>
+                                                </TooltipProvider>
+                                            </Link>
+                                        </span>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        <span className="text-base lg:text-3xl xl:text-3xl">Key Findings</span>
+                                        <ul className="list-disc ml-5">
+                                            <li>Member riders complete about 75% more rides compared to casual riders during the week.</li>
+                                            <li>Member riders' average duration stays consistent throughout weekdays and has slight bump on the weekend.</li>
+                                            <li>The main reason for riders to sign up for annual membership is for commuting to work.</li>
+                                            <li>Casual riders' average duration is significantly higher than trips done by member riders in any day of the week.</li>
+                                            <li>Casual riders has shorter average duration during weekdays and longer average duration on the weekend.</li>
+                                            <li>Casual riders also complete more rides on the weekend compared to weekdays.</li>
+                                            <li>Casual riders are 35% more likely to ride an electric bike than a classic bike.</li>
+                                            <li>Member riders' bike choice is 50/50 between classic and electric bike.</li>
+                                            <li>The number of rides in July is at least 8x more compared to the number of rides in January. <br />
+                                                (In Chicago, July is the hottest month, and January is the coldest month according to Google)
+                                            </li>
+                                        </ul>
+
+                                        <span className="text-base lg:text-3xl xl:text-3xl">Conclusion</span>
+                                        <ul className="list-disc ml-5">
+                                            <li>Member riders have high and consistent number of rides as well as consistent average duration from Monday to Friday, meaning that they use the bikes to commute to work daily, and decide to sign up for the annual membership in order to save money in the long run.</li>
+                                            <li>Casual riders are most likely tourists/visitors, and new customers. Their average duration is shorter in the middle of the week and longer on the weekend, and they complete more rides on the weekend. Therefore, they tend to use the bikes for leisure purposes and weekend rides.</li>
+                                            <li>The bike-sharing program tends to become busier during warmer weather, and the opposite occurs during colder weather.</li>
+                                            <li>Casual riders prefer electric bikes over classic bikes.</li>
+                                        </ul>
+
+                                        <span className="text-base lg:text-3xl xl:text-3xl">Recommendation</span>
+                                        <ul className="list-disc ml-5">
+                                            <li>Because the majority of casual riders are tourists/visitors, we want to target only the small group of casual riders that are local to the city in order to maximize the profits. Therefore, we should introduce a membership tier at a lower price point compared to the more premium annual membership. This new membership tier is for the locals that don't need this bike-share program for commuting to work. But it still allows new customers to enjoy the program on the weekend at a more afforadable price point.</li>
+                                            <li>Implement a limited-time promotion for customers who sign up for the membership for the first time. The promotion can either be "30 day free trial", or "half-price off 1st month", depending on the company's budget. The purpose of these promotions is to introduce the benefits, convienence, and potential savings to new members.</li>
+                                            <li>Add more electric bikes into the existing fleet to meet the casual riders' demand.</li>
+                                        </ul>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* summary */}
+                                        <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
+
+                                        {/* histograms */}
+                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Activities by day of the week</p>
+                                        <div className="w-full sm:w-full md:w-full lg:w-[86%] xl:w-[70%] mx-auto">
+                                            <Swiper
+                                                spaceBetween={30}
+                                                slidesPerView={1}
+                                                className="h-[520px] mb-12"
+                                            >
+                                                {project.histograms.map((histogram, index) => {
+                                                    return (
+                                                        <SwiperSlide key={index} className="w-full">
+                                                            <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(histogram.src)} style={{ cursor: 'pointer' }}>
+                                                                {/* overlay */}
+                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                
+                                                                {/* image */}
+                                                                <div className="relative w-full h-full">
+                                                                    <Image src={histogram.src} fill quality={100} alt={`Histogram ${index + 1}`} />
+                                                                </div>
+                                                            </div>
+                                                            {/* caption */}
+                                                            <p className="absolute bottom-2 text-primarytext text-xs md:text-lg z-20">{histogram.caption}</p> 
+                                                        </SwiperSlide>
+                                                    );
+                                                })}
+
+                                                {/* slider buttons */}
+                                                <ProjectSliderBtns 
+                                                    containerStyles="flex gap-2 absolute right-0 bottom-0 z-20 w-full w-max justify-none xl:bottom-0 xl:w-max xl:justify-none" 
+                                                    btnStyles="bg-primary hover:bg-accent text-accent hover:text-primary text-[28px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                                                />
+                                            </Swiper>
+                                        </div>
+
+                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Number of trip records by month</p>
+                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
+                                            <div onClick={() => handleZoomClick(project.trips_by_month)} style={{ cursor: 'pointer' }}>
+                                                <Image src={project.trips_by_month} quality={100} width="800" height="400" />
+                                            </div>
+                                        </span>
+
+                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Number of rides by rider and bike type</p>
+                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
+                                            <div onClick={() => handleZoomClick(project.bike_type)} style={{ cursor: 'pointer' }}>
+                                                <Image src={project.bike_type} quality={100} width="800" height="400" />
+                                            </div>
+                                        </span>
+
+                                    </>
+                                )}
+
+                                {/* project (07) content */}
+                                {(project.num === "07") && (
+                                    <>
+                                        {/* project description */}
+                                        <p className="text-primarytext/60">{project.description}</p>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* summary */}
+                                        <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
+
+                                    </>
+                                )}
+
+                                {/* project (08) content */}
+                                {(project.num === "08") && (
+                                    <>
+                                        {/* project description */}
+                                        <p className="text-primarytext/60">{project.description}</p>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* summary */}
+                                        <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
+
+                                    </>
+                                )}
+
+                                {/* project (09) content */}
+                                {(project.num === "09") && (
+                                    <>
+                                        {/* project description */}
+                                        <p className="text-primarytext/60">{project.description}</p>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* summary */}
+                                        <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
+
+                                    </>
+                                )}
+
+                                {/* project (10) content */}
+                                {(project.num === "10") && (
+                                    <>
+                                        {/* project description */}
+                                        <p className="text-primarytext/60">{project.description}</p>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* summary */}
+                                        <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
+
+                                    </>
+                                )}
+
+                                {/* project 11 loan outliers content */}
+                                {(project.num === "11") && (
                                     <>
                                         {/* project description */}
                                         <p className="text-primarytext/60">
@@ -1013,7 +1294,8 @@ const Projects = () => {
 
                                         {/* data info */}
                                         <p className="text-primarytext/60">
-                                            Data size: 9578 entries, 8 columns
+                                            Loan Dataset <br />
+                                            Size: 9578 entries, 8 columns
                                         </p>
                                         <p className="text-primarytext/60">
                                         Metadata:
@@ -1114,75 +1396,6 @@ const Projects = () => {
                                     </>
                                 )}
 
-                                {/* project 06 content */}
-                                {(project.num === "06") && (
-                                    <>
-                                        {/* project description */}
-                                        <p className="text-primarytext/60">
-                                            {project.description}
-                                        </p>
-
-                                        {/* border */}
-                                        <div className="border border-primarytext/50 my-6"></div>
-
-                                        {/* kaggle link button */}
-                                        <span className="flex items-center justify-start gap-6">
-                                            <span className="text-base lg:text-xl xl:text-xl">Kaggle Notebook</span>
-                                            <Link href={project.kaggle} target="_blank" className="flex items-center group transition-all">
-                                                <TooltipProvider delayDuration={100}>
-                                                    <Tooltip>
-                                                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-primarytext/10 flex justify-center items-center group duration-500 hover:rotate-45">
-                                                            <BsArrowUpRight className="text-primarytext text-xl group-hover:text-accent transition-all" />
-                                                        </TooltipTrigger>
-                                                        <TooltipContent>
-                                                            <p>Kaggle Notebook</p>
-                                                        </TooltipContent>
-                                                    </Tooltip>
-                                                </TooltipProvider>
-                                            </Link>
-                                        </span>
-
-                                        {/* border */}
-                                        <div className="border border-primarytext/50 my-6"></div>
-
-                                        {/* summary */}
-                                        <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
-
-                                        {/*
-                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Comment Count by Date</p>
-                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
-                                            <div onClick={() => handleZoomClick(project.)} style={{ cursor: 'pointer' }}>
-                                                <Image src={project.} quality={100} width="800" height="400" />
-                                            </div>
-                                        </span>
-
-                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Comment Activity by the Hour</p>
-                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
-                                            <div onClick={() => handleZoomClick(project.)} style={{ cursor: 'pointer' }}>
-                                                <Image src={project.} quality={100} width="800" height="400" />
-                                            </div>
-                                        </span>
-
-                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Count of Sentiment Score</p>
-                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
-                                            <div onClick={() => handleZoomClick(project.)} style={{ cursor: 'pointer' }}>
-                                                <Image src={project.} quality={100} width="800" height="400" />
-                                            </div>
-                                        </span>
-
-                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Wordcloud Visualization</p>
-                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
-                                            <div onClick={() => handleZoomClick(project.)} style={{ cursor: 'pointer' }}>
-                                                <Image src={project.} quality={100} width="800" height="400" />
-                                            </div>
-                                        </span>
-                                        */}
-                                    </>
-                                )}
-
-                                
-
-
                                 {/* Click to zoom image */}
                                 {isZoomed && (
                                     <div 
@@ -1253,7 +1466,7 @@ const Projects = () => {
 
                                         </div>
                                         <div className="mt-6">
-                                            <p className="text-center text-primarytext/60 text-lg md:text-lg lg:text-xl xl:text-xl z-20">{project.num.charAt(1)}/{totalProjects}</p> 
+                                            <p className="text-center text-primarytext/60 text-lg md:text-lg lg:text-xl xl:text-xl z-20">{project.num}/{totalProjects}</p> 
                                         </div>
                                         
                                     </SwiperSlide>

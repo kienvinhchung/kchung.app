@@ -40,7 +40,7 @@ import Link from "next/link";
 //about data
 const about = {
     title: 'About me',
-    description: "Highly self motivated and passionate individual with foundational experience, seeking an opportunity to contribute to the company's growth while gaining industry knowledge. Currently pursuing a MS program in data science at PACE University, driven by a passion to become a data-driven problem solver. Demonstrated a successful history of balancing professional responsibilities and academic pursuits. Proven track record of applying expertise knowledge in data analytics and utilizing tools through various professional projects.",
+    description: "Aspiring data science professional pursuing a Master of Science in Data Science. Excels at analytics, machine learning, and business intelligence, with hands-on experience in building predictive models and deriving actionable insights to support data-driven decisions. Proficient in Python, SQL, and Power BI, with a proven track record in customer behavior prediction, loan approval model, and business performance visualization. Eager to apply analytical skills, a problem-solving passion, and a results-driven mindset to drive business growth and innovation.",
     info: [
         {
             fieldName: "Name",
@@ -72,13 +72,13 @@ const about = {
 const experience = {
     icon: '/assets/resume/badge.svg',
     title: 'My Experience',
-    description: "A passionate individual with foundational experience, seeking an opportunity to contribute to the company's growth while gaining industry knowledge.",
+    description: "Excels at analytics, machine learning, and business intelligence, with hands-on experience in building predictive models and deriving actionable insights to support data-driven decisions. Proficient in Python, SQL, and Power BI, with a proven track record in customer behavior prediction, loan approval model, and business performance visualization.",
     items: [
         {
             company: "British Airways",
             location: "Remote",
             position: "Data Science Intern",
-            type: "",
+            type: "Internship by Forage",
             duration: "Summer 2024",
         },
         {
@@ -116,7 +116,7 @@ const experience = {
 const education = {
     icon: '/assets/resume/cap.svg',
     title: 'My Education',
-    description: 'Strong foundation in data, computer science, business intelligence, business administration, finance, accounting, statistics, and mathematics.',
+    description: 'Dedicated data science professional pursuing a Master of Science in Data Science. Strong foundation in data science, computer science, business intelligence, mathematics, probability, statistics, business administration, finance, and accounting.',
     items: [
         {
             institution: "PACE University - NYC, NY",
@@ -193,7 +193,7 @@ const skills = {
     skillList: [
         {
             icon: <FaPython />,
-            name: "Python 3",
+            name: "Python",
         },
         {
             icon: <SiPandas />,
@@ -241,15 +241,15 @@ const skills = {
         },
         {
             icon: <FaHtml5 />,
-            name: "HTML 5",
+            name: "HTML5",
         },
         {
             icon: <FaCss3 />,
-            name: "CSS 3",
+            name: "CSS3",
         },
         {
             icon: <SiTailwindcss />,
-            name: "Tailwind.css",
+            name: "Tailwind CSS",
         },
         {
             icon: <FaJs />,
@@ -257,19 +257,19 @@ const skills = {
         },
         {
             icon: <FaReact />,
-            name: "React.js",
+            name: "ReactJS",
         },
         {
             icon: <SiNextdotjs />,
-            name: "Next.js",
+            name: "NextJS",
         },
         {
             icon: <FaNodeJs />,
-            name: "Node.js",
+            name: "NodeJS",
         },
         {
             icon: <FaVuejs />,
-            name: "Vue.js",
+            name: "VueJS",
         },
         {
             icon: <FaJava />,
