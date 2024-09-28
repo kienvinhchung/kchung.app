@@ -181,22 +181,27 @@ const projects = [
         title: "Credit Card Defaults",
         description: "This project involves cleaning and analyzing credit card default data from a credit card company. Key factors such as age, gender, marital status, educational level, and geographic distribution across US states are explored to identify trends and patterns in credit card defaults. The findings are visualized through an interactive Power BI dashboard, offering insights into customer demographics and factors contributing to default rates. The dashboard allows stakeholders to better understand credit risk and tailor strategies for credit card management.", 
         stack: [{name: "Power BI"}, {name: "Excel"}, {name: "Business Intelligence"}],
-        image: '/assets/work/project_creditcard/',
+        image: '/assets/work/project_creditcard/project-wallpaper-creditcard.jpg',
         reports: 'https://app.powerbi.com/view?r=eyJrIjoiODQzZmQzOGYtMzU0Mi00Nzc4LWFhMTItOTY3NzU4MGY1MDQ1IiwidCI6IjcwNDBmMmI1LWJlNWYtNDQ2Mi05OTFlLTBjNTY4MGRiZTZlNCJ9',
-        hisograms: [
-            { src: '/assets/work/project_creditcard/number_of_rides.png', caption: "Number of rides by day of the week and rider type (1/2)" },
-            { src: '/assets/work/project_creditcard/average_duration.png', caption: "Average duration by day of the week and rider type (2/2)" },
+        graphs: [
+            { src: '/assets/work/project_creditcard/sex.png', caption: "Default Rate by Sex (1/4)" },
+            { src: '/assets/work/project_creditcard/age_sex.png', caption: "Default Rate by Age and Sex (2/4)" },
+            { src: '/assets/work/project_creditcard/education_sex.png', caption: "Default Rate by Educational Level and Sex (2/4)" },
+            { src: '/assets/work/project_creditcard/marital_sex.png', caption: "Default Rate by Marital Status and Sex (2/4)" },
         ],
-        blank1: '/assets/work/project_project_creditcard/',
+        default_states: '/assets/work/project_creditcard/default_states.png',
+        dashboard: '/assets/work/project_creditcard/dashboard.png',
     },
 
-    /* logistic */
+    /* logistics */
     {   num: "09",
-        title: "",
-        description: "(coming soon)", 
-        stack: [{name: ""}, {name: ""}, {name: ""}],
-        image: '/assets/work/project_/',
-        blank1: '/assets/work/project_/',
+        title: "Logistics Demand and Container Shipping Rate",
+        description: "This project involves managing North American logistics operations for a national retailer facing challenges due to port congestion and rising fuel and transportation costs. The task focuses on cleaning, analyzing, and transforming raw datasets into meaningful insights, trends, and patterns. The goal is to optimize the company's importing and distribution processes across the US while ensuring customer demand is met. The results are presented to executives to help guide strategic decision-making and improve overall supply chain efficiency.", 
+        stack: [{name: "Tableau"}, {name: "Excel"}, {name: "Logistics"}],
+        report1: 'https://public.tableau.com/views/LogisticsDemand/DemandDataDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link',
+        report2: 'https://public.tableau.com/views/LogisticsContainerShippingRatefromStatetoRate/RateDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link',
+        image: '/assets/work/project_logistics/',
+        blank1: '/assets/work/project_logistics/',
     },
 
     /* ibm */
@@ -1292,6 +1297,56 @@ const Projects = () => {
                                         {/* summary */}
                                         <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
 
+                                        {/* snapshot */}
+                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Snapshot of the report</p>
+                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
+                                            <div onClick={() => handleZoomClick(project.dashboard)} style={{ cursor: 'pointer' }}>
+                                                <Image src={project.dashboard} quality={100} width="800" height="400" />
+                                            </div>
+                                        </span>
+
+                                        {/* graphs */}
+                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Activities by day of the week</p>
+                                        <div className="w-full sm:w-full md:w-full lg:w-[86%] xl:w-[70%] mx-auto">
+                                            <Swiper
+                                                spaceBetween={30}
+                                                slidesPerView={1}
+                                                className="h-[520px] mb-12"
+                                            >
+                                                {project.graphs.map((graph, index) => {
+                                                    return (
+                                                        <SwiperSlide key={index} className="w-full">
+                                                            <div className="h-[460px] relative group flex flex-col justify-center items-center bg-accent/20" onClick={() => handleZoomClick(graph.src)} style={{ cursor: 'pointer' }}>
+                                                                {/* overlay */}
+                                                                <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                                                
+                                                                {/* image */}
+                                                                <div className="relative w-full h-full">
+                                                                    <Image src={graph.src} fill quality={100} alt={`Histogram ${index + 1}`} />
+                                                                </div>
+                                                            </div>
+                                                            {/* caption */}
+                                                            <p className="absolute bottom-2 text-primarytext text-xs md:text-lg z-20">{graph.caption}</p> 
+                                                        </SwiperSlide>
+                                                    );
+                                                })}
+
+                                                {/* slider buttons */}
+                                                <ProjectSliderBtns 
+                                                    containerStyles="flex gap-2 absolute right-0 bottom-0 z-20 w-full w-max justify-none xl:bottom-0 xl:w-max xl:justify-none" 
+                                                    btnStyles="bg-primary hover:bg-accent text-accent hover:text-primary text-[28px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                                                />
+                                            </Swiper>
+                                        </div>
+
+                                        {/* default by state */}
+                                        <p className="text-base lg:text-2xl xl:text-2xl text-center">Default Rate by State</p>
+                                        <p className="text-xs lg:text-base xl:text-base italic text-center">* Higher default rate equals darker color</p>
+                                        <span className="flex items-center mx-auto mb-10 border border-accent border-4">
+                                            <div onClick={() => handleZoomClick(project.default_states)} style={{ cursor: 'pointer' }}>
+                                                <Image src={project.default_states} quality={100} width="800" height="400" />
+                                            </div>
+                                        </span>
                                     </>
                                 )}
 
@@ -1303,6 +1358,55 @@ const Projects = () => {
 
                                         {/* border */}
                                         <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* data info */}
+                                        <p className="text-primarytext/60">
+                                            Logistics Demand Dataset <br />
+                                            Size: 1,262 entries; 8 features
+                                        </p>
+
+                                        {/* Dashboard button */}
+                                        <span className="flex items-center justify-start gap-6">
+                                            <span className="text-base lg:text-xl xl:text-xl">Interactive Dashboard with Tableau Public:</span>
+                                            <Link href={project.report1} target="_blank" className="flex items-center group transition-all">
+                                                <TooltipProvider delayDuration={100}>
+                                                    <Tooltip>
+                                                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-primarytext/10 flex justify-center items-center group duration-500 hover:rotate-45">
+                                                            <BsArrowUpRight className="text-primarytext text-xl group-hover:text-accent transition-all" />
+                                                        </TooltipTrigger>
+                                                        <TooltipContent>
+                                                            <p>Interactive Dashboard</p>
+                                                        </TooltipContent>
+                                                    </Tooltip>
+                                                </TooltipProvider>
+                                            </Link>
+                                        </span>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* data info */}
+                                        <p className="text-primarytext/60">
+                                            Container Shipping Rate Dataset <br />
+                                            Size: 623,808 entries; 8 features
+                                        </p>
+
+                                        {/* Dashboard button */}
+                                        <span className="flex items-center justify-start gap-6">
+                                            <span className="text-base lg:text-xl xl:text-xl">Interactive Dashboard with Tableau Public:</span>
+                                            <Link href={project.report2} target="_blank" className="flex items-center group transition-all">
+                                                <TooltipProvider delayDuration={100}>
+                                                    <Tooltip>
+                                                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-primarytext/10 flex justify-center items-center group duration-500 hover:rotate-45">
+                                                            <BsArrowUpRight className="text-primarytext text-xl group-hover:text-accent transition-all" />
+                                                        </TooltipTrigger>
+                                                        <TooltipContent>
+                                                            <p>Interactive Dashboard</p>
+                                                        </TooltipContent>
+                                                    </Tooltip>
+                                                </TooltipProvider>
+                                            </Link>
+                                        </span>
 
                                         {/* border */}
                                         <div className="border border-primarytext/50 my-6"></div>
