@@ -178,11 +178,16 @@ const projects = [
 
     /* credit card */
     {   num: "08",
-        title: "",
-        description: "(coming soon)", 
-        stack: [{name: ""}, {name: ""}, {name: ""}],
-        image: '/assets/work/project_/',
-        blank1: '/assets/work/project_/',
+        title: "Credit Card Defaults",
+        description: "This project involves cleaning and analyzing credit card default data from a credit card company. Key factors such as age, gender, marital status, educational level, and geographic distribution across US states are explored to identify trends and patterns in credit card defaults. The findings are visualized through an interactive Power BI dashboard, offering insights into customer demographics and factors contributing to default rates. The dashboard allows stakeholders to better understand credit risk and tailor strategies for credit card management.", 
+        stack: [{name: "Power BI"}, {name: "Excel"}, {name: "Business Intelligence"}],
+        image: '/assets/work/project_creditcard/',
+        reports: 'https://app.powerbi.com/view?r=eyJrIjoiODQzZmQzOGYtMzU0Mi00Nzc4LWFhMTItOTY3NzU4MGY1MDQ1IiwidCI6IjcwNDBmMmI1LWJlNWYtNDQ2Mi05OTFlLTBjNTY4MGRiZTZlNCJ9',
+        hisograms: [
+            { src: '/assets/work/project_creditcard/number_of_rides.png', caption: "Number of rides by day of the week and rider type (1/2)" },
+            { src: '/assets/work/project_creditcard/average_duration.png', caption: "Average duration by day of the week and rider type (2/2)" },
+        ],
+        blank1: '/assets/work/project_project_creditcard/',
     },
 
     /* logistic */
@@ -1257,6 +1262,29 @@ const Projects = () => {
 
                                         {/* border */}
                                         <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* data info */}
+                                        <p className="text-primarytext/60">
+                                            Credit Card Defaults Dataset <br />
+                                            Size: 30,002 entries; 26 features
+                                        </p>
+
+                                        {/* reports button */}
+                                        <span className="flex items-center justify-start gap-6">
+                                            <span className="text-base lg:text-xl xl:text-xl">Interactive Reports with Power BI Web Services:</span>
+                                            <Link href={project.reports} target="_blank" className="flex items-center group transition-all">
+                                                <TooltipProvider delayDuration={100}>
+                                                    <Tooltip>
+                                                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-primarytext/10 flex justify-center items-center group duration-500 hover:rotate-45">
+                                                            <BsArrowUpRight className="text-primarytext text-xl group-hover:text-accent transition-all" />
+                                                        </TooltipTrigger>
+                                                        <TooltipContent>
+                                                            <p>Interactive Reports</p>
+                                                        </TooltipContent>
+                                                    </Tooltip>
+                                                </TooltipProvider>
+                                            </Link>
+                                        </span>
 
                                         {/* border */}
                                         <div className="border border-primarytext/50 my-6"></div>
