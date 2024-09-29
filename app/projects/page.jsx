@@ -125,7 +125,7 @@ const projects = [
         ],
     },
 
-    /* fb tiktok sentiment analysis */
+    /* 04 fb tiktok sentiment analysis */
     {   num: "04",
         title: "Sentiment & Textual Analysis",
         description: "This project focuses on analyzing public sentiment regarding the TikTok ban as discussed in FOX News's post on Facebook. It involves scraping data from this post and applying natural language processing techniques to gain insights into public opinion on the issue. Additionally, the project will visualize the frequency of key terms using a WordCloud to reveal prominent themes and sentiments.",
@@ -143,15 +143,15 @@ const projects = [
         kaggle: 'https://www.kaggle.com/code/kienvchung/textual-data-analysis-tiktokban/notebook',
     },
 
-    /* tiktok claims */
+    /* 05 tiktok claims */
     {   num: "05",
         title: "Tiktok Claims Video Classification Predictive Model",
         description: "(uploading....)", 
         stack: [{name: "Python"}, {name: "Machine Learning"}, {name: "Classification"}],
-        image: '/assets/work/project_/',
+        image: '/assets/work/project_tiktokclaims/project-wallpaper-tiktokclaims.jpg',
     },
 
-    /* bikeshare */
+    /* 06 bikeshare */
     {   num: "06",
         title: "Bike-share Marketing Analysis",
         description: "The marketing analyst team at Cyclistic, a bike-share company in Chicago, aims to convert casual riders into annual members by analyzing how both groups use the service differently. To support this initiative, 12 months of historical trip data will be collected, cleaned, and analyzed. The analysis, visualized using ggplot, will provide insights that inform marketing strategies to maximize annual memberships and drive future growth. These recommendations will be presented to Cyclistic executives for approval.", 
@@ -166,7 +166,7 @@ const projects = [
         trips_by_month: '/assets/work/project_bikeshare/trips_by_month.png',
     },
 
-    /* yelp sql */
+    /* 07 yelp sql */
     {   num: "07",
         title: "Yelp Business & User Analysis",
         description: "This project consists of a two-part assignment focused on data profiling, analysis, and research. The first part involves answering a series of questions designed to help profile and understand the dataset. The evaluation will consider both the accuracy of findings and the readability of the code used. Proper formatting and comments are expected to make the code easy to follow. The second part requires formulating and answering a research question based on the dataset. The dataset must be prepared for analysis, and the code will again be assessed on clarity and readability. The final deliverable for both parts will be a worksheet containing the answers and SQL code, formatted in a manner that ensures it is clear for peer review.", 
@@ -176,7 +176,7 @@ const projects = [
         deliverable: '/assets/work/project_yelp/yelp_sql.txt',
     },
 
-    /* credit card */
+    /* 08 credit card */
     {   num: "08",
         title: "Credit Card Defaults",
         description: "This project involves cleaning and analyzing credit card default data from a credit card company. Key factors such as age, gender, marital status, educational level, and geographic distribution across US states are explored to identify trends and patterns in credit card defaults. The findings are visualized through an interactive Power BI dashboard, offering insights into customer demographics and factors contributing to default rates. The dashboard allows stakeholders to better understand credit risk and tailor strategies for credit card management.", 
@@ -193,7 +193,7 @@ const projects = [
         dashboard: '/assets/work/project_creditcard/dashboard.png',
     },
 
-    /* logistics */
+    /* 09 logistics */
     {   num: "09",
         title: "Logistics Demand and Container Shipping Rate",
         description: "This project involves managing North American logistics operations for a national retailer facing challenges due to port congestion and rising fuel and transportation costs. The task focuses on cleaning, analyzing, and transforming raw datasets into meaningful insights, trends, and patterns. The goal is to optimize the company's importing and distribution processes across the US while ensuring customer demand is met. The results are presented to executives to help guide strategic decision-making and improve overall supply chain efficiency.", 
@@ -215,7 +215,7 @@ const projects = [
         rate_state: '/assets/work/project_logistics/rate_state.png',
     },
 
-    /* loan outliers */
+    /* 10 loan outliers */
     {   num: "10",
         title: "Loan Data Outlier Detection",
         description: "Outlier detection in datasets is most effectively achieved through visualization. A common statistical method for identifying outliers is the 1.5x IQR (Interquartile Range) rule. This project implements a Python function that applies this rule to detect outliers in a dataset. The outliers are then visually highlighted within the dataframe for easy identification and analysis.",
@@ -237,7 +237,7 @@ const projects = [
         kaggle: 'https://www.kaggle.com/code/kienvchung/loan-data-outliers-detection',
     },
 
-    /* ibm */
+    /* 11 ibm */
     {   num: "11",
         title: "",
         description: "(coming soon)", 
@@ -1511,8 +1511,6 @@ const Projects = () => {
 
                                     </>
                                 )}
-
-                                
 
                                 {/* project 10 loan outliers content */}
                                 {(project.num === "10") && (
