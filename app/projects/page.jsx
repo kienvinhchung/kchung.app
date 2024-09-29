@@ -315,7 +315,6 @@ const Projects = () => {
                                     );
                                 })}
                             </ul>
-                            
                             {/* for projects with stack1 stack2 */}
                             {(project.num === "01" || project.num === "02") && (
                                 <>
@@ -343,7 +342,6 @@ const Projects = () => {
                                     </ul>
                                 </>
                             )}
-
                             {/* for projects with stack1 stack2 stack3 */}
                             {(project.num === "04") && (
                                 <>
