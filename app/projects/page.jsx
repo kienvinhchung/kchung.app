@@ -215,17 +215,8 @@ const projects = [
         rate_state: '/assets/work/project_logistics/rate_state.png',
     },
 
-    /* ibm */
-    {   num: "10",
-        title: "",
-        description: "(coming soon)", 
-        stack: [{name: ""}, {name: ""}, {name: ""}],
-        image: '/assets/work/project_/',
-        blank1: '/assets/work/project_/',
-    },
-
     /* loan outliers */
-    {   num: "11",
+    {   num: "10",
         title: "Loan Data Outlier Detection",
         description: "Outlier detection in datasets is most effectively achieved through visualization. A common statistical method for identifying outliers is the 1.5x IQR (Interquartile Range) rule. This project implements a Python function that applies this rule to detect outliers in a dataset. The outliers are then visually highlighted within the dataframe for easy identification and analysis.",
         stack: [{name: "Python"}, {name: "Pandas"}, {name: "Plotly"} , {name: "NumPy"}],
@@ -244,6 +235,15 @@ const projects = [
             { src: '/assets/work/project_loanoutliers/util-hist.png', caption: "Borrower's revolving line utilization rate (8/8)" },
         ],
         kaggle: 'https://www.kaggle.com/code/kienvchung/loan-data-outliers-detection',
+    },
+
+    /* ibm */
+    {   num: "11",
+        title: "",
+        description: "(coming soon)", 
+        stack: [{name: ""}, {name: ""}, {name: ""}],
+        image: '/assets/work/project_/',
+        blank1: '/assets/work/project_/',
     },
 
 ];
@@ -1512,26 +1512,10 @@ const Projects = () => {
                                     </>
                                 )}
 
-                                {/* project (10) content */}
+                                
+
+                                {/* project 10 loan outliers content */}
                                 {(project.num === "10") && (
-                                    <>
-                                        {/* project description */}
-                                        <p className="text-primarytext/60">{project.description}</p>
-
-                                        {/* border */}
-                                        <div className="border border-primarytext/50 my-6"></div>
-
-                                        {/* border */}
-                                        <div className="border border-primarytext/50 my-6"></div>
-
-                                        {/* summary */}
-                                        <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
-
-                                    </>
-                                )}
-
-                                {/* project 11 loan outliers content */}
-                                {(project.num === "11") && (
                                     <>
                                         {/* project description */}
                                         <p className="text-primarytext/60">
@@ -1642,6 +1626,24 @@ const Projects = () => {
                                                 <Image src={project.formatted} quality={100} width="800" height="400" />
                                             </div>
                                         </span>
+                                    </>
+                                )}
+
+                                {/* project (11) content */}
+                                {(project.num === "11") && (
+                                    <>
+                                        {/* project description */}
+                                        <p className="text-primarytext/60">{project.description}</p>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* border */}
+                                        <div className="border border-primarytext/50 my-6"></div>
+
+                                        {/* summary */}
+                                        <span className="text-base lg:text-3xl xl:text-3xl">Project Summary:</span>
+
                                     </>
                                 )}
 
