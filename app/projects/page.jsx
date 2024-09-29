@@ -42,7 +42,7 @@ const projects = [
             {src: '/assets/work/project_britishairways/graphs/month_count_bar.png', caption: "Review Count by Month Bar Chart (2/2)" },
         ],
         sentiment_scores: [
-            {src: '/assets/work/project_britishairways/graphs/scores_trends_line.png', caption: "Sentiment Score Ovver Years Line Chart (1/4)" }, 
+            {src: '/assets/work/project_britishairways/graphs/scores_trends_line.png', caption: "Sentiment Score Over Years Line Chart (1/4)" }, 
             {src: '/assets/work/project_britishairways/graphs/month_scores_bar.png', caption: "Sentiment Score Trends Over Months Grouped Bar Chart (2/4)" },
             {src: '/assets/work/project_britishairways/graphs/scores_bar.png', caption: "Sentiment Score by Count Grouped Bar Chart (3/4)" }, 
             {src: '/assets/work/project_britishairways/graphs/scores_pie.png', caption: "Sentiment Score Distribution Pie Chart (4/4)" }, 
